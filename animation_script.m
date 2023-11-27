@@ -6,5 +6,5 @@
 
  n = size (x_data);
  for i = 1:n
-     visual( x_data,y_data,theta_data,delta1_data,delta2_data);
+     visual( x_data(i),y_data(i),theta_data(i),delta1_data(i),delta2_data(i));
  end;
