@@ -4,8 +4,6 @@ l=9;
 W= 4;
 pose=[x;y];
 
-rectangle('Position', [0, 0, 30, 20], 'EdgeColor', 'green');
-hold on
 
 centres_obs = [4, 10; 3, 2; 9,12;5,16;15,15;15,2;7,6;13,8]; 
 rayon_obs = [0.5, 0.4,1,0.2,1,0.7,0.8,0.6]; 
@@ -32,10 +30,11 @@ hold on ;
 
 plot(R2(:, 1), R2(:, 2), 'LineWidth', 1, 'Color', 'gre');
 hold on ;
-rectangle('Position', [-20, -20, 20, 20], 'EdgeColor', 'black'); 
+rectangle('Position', [-10, -10, 30, 30], 'EdgeColor', 'black'); 
 axis equal; 
 xlabel('X-axis');
 ylabel('Y-axis');
 pause(0.01);
+
 
 end
