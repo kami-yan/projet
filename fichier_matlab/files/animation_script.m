@@ -10,7 +10,9 @@
  for i = 1:n
      clf;
      plot(rx_data, ry_data);
+     hold on;
      plot(x_data(1:i-1),y_data(1:i-1),"g");
+     hold on;
      xlabel('X');
      ylabel('Y');
      title('target points');
