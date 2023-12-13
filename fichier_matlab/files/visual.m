@@ -1,7 +1,4 @@
 function h = visual(x,y,theta,s1,s2)
-L = 10;
-l=9;
-W= 4;
 pose=[x;y];
 
 
