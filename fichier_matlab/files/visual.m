@@ -2,8 +2,8 @@ function h = visual(x,y,theta,s1,s2)
 pose=[x;y];
 
 environement
-
-viscircles(centres_obs, rayon_obs, 'Color', 'red'); 
+Robot
+viscircles(centres_obs, rayon_obs, 'Color', 'black'); 
 hold on; 
 robot_chassis = [pose(1)+cos(theta)*L/2 ,pose(2)+sin(theta)*L/2 ; pose(1)-cos(theta)*L/2 , pose(2)-sin(theta)*L/2 ];
 roue_chassis = [pose(1)+cos(theta)*l/2 ,pose(2)+sin(theta)*l/2 ; pose(1)-cos(theta)*l/2 , pose(2)-sin(theta)*l/2 ];
@@ -25,7 +25,7 @@ hold on ;
 
 plot(R2(:, 1), R2(:, 2), 'LineWidth', 1, 'Color', 'gre');
 hold on ;
-rectangle('Position', [-10, -10, 30, 30], 'EdgeColor', 'black'); 
+rectangle('Position', [xb, yb, Longueur_esp, Largeur_esp], 'LineWidth', 2, 'EdgeColor', 'black'); 
 axis equal; 
 xlabel('X-axis');
 ylabel('Y-axis');
