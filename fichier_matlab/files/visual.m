@@ -1,9 +1,7 @@
 function h = visual(x,y,theta,s1,s2)
 pose=[x;y];
 
-
-centres_obs = [4, 10; 3, 2; 9,12;5,16;15,15;15,2;7,6;13,8]; 
-rayon_obs = [0.5, 0.4,1,0.2,1,0.7,0.8,0.6]; 
+environement
 
 viscircles(centres_obs, rayon_obs, 'Color', 'red'); 
 hold on; 
