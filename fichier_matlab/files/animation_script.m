@@ -9,9 +9,9 @@
  n = size (x_data);
  for i = 1:n
      clf;
-     plot(rx_data, ry_data);
+     plot(rx_data, ry_data'LineWidth', 2, 'Color', 'red');
      hold on;
-     plot(x_data(1:i-1),y_data(1:i-1),"g");
+     plot(x_data(1:i-1),y_data(1:i-1),'LineWidth', 1, 'Color', 'gre');
      hold on;
      xlabel('X');
      ylabel('Y');
