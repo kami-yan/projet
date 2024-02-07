@@ -4,3 +4,5 @@ pour voir l’animation il suffit de de run animation_script.m
 les fonctions S_q permet de calculer la matrice de configuration cinematique mais n'intervient pas dans le programme
 les fonctions K_inv permet de la calculer l'inverse du k suivant: 𝑝̇ = 𝐾(𝜃) ∗ u
 
+la fonction distance.m permet de calculer la distance minimale avec un obstacle
+la fonction distancePLusProche permet de determiner l'obstacle le plus proche avec la distance entre les deux 
