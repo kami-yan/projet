@@ -6,3 +6,8 @@ les fonctions K_inv permet de la calculer l'inverse du k suivant: 𝑝̇ = 𝐾(
 
 la fonction distance.m permet de calculer la distance minimale avec un obstacle
 la fonction distancePLusProche permet de determiner l'obstacle le plus proche avec la distance entre les deux 
+
+fonction auxliaire utlise dans le script:
+  Robot.m
+  environement.m
+  visual.m
