@@ -1,0 +1,6 @@
+pour afficher les trajectoires il suffit de run plotting.m
+pour voir l’animation il suffit de de run animation_script.m
+
+les fonctions S_q permet de calculer la matrice de configuration cinematique mais n'intervient pas dans le programme
+les fonctions K_inv permet de la calculer l'inverse du k suivant: 𝑝̇ = 𝐾(𝜃) ∗ u
+
