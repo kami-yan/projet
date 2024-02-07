@@ -1,8 +1,18 @@
+close all; clear all;
+
+% Define the path to your Simulink model
+modelPath = 'projet.slx';
+
+% Load the model into memory (optional, sim will load it if not loaded)
+load_system(modelPath);
+
+% Simulate the model
+out = sim(modelPath, 'SimulationMode', 'normal');
 
 
 % If the data is in timeseries format, you need to extract the data like this:
- x_data = out.x.Data;
- y_data = out.y.Data;
+ x_data = out.xp.Data;
+ y_data = out.yp.Data;
 
 % If the data is in timeseries format, you need to extract the data like this:
  rx_data = out.rx.Data;
@@ -50,7 +60,7 @@ ylabel('Y');
 title('la trajectoire de p du robot ');
 grid on;
 
-legend('target','trajectoire du robot')
+legend('trajectoire desirée','trajectoire du robot')
 
 % Plot the error data
 figure;

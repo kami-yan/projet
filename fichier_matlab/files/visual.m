@@ -1,6 +1,6 @@
 function h = visual(x,y,theta,s1,s2)
-environement
-Robot
+environement;
+Robot;
 pose=[x-d*cos(theta+s1)-l/2*cos(theta);y-d*sin(theta+s1)-l/2*sin(theta)];
 
 
@@ -33,6 +33,7 @@ axis equal;
 xlabel('X-axis');
 ylabel('Y-axis');
 pause(0.01);
+clf;
 
 
 end

@@ -1,3 +1,5 @@
+clear all; close all
+
 %declaration des csts
 rayon = 2;
 a = 2;

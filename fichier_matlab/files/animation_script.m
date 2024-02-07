@@ -1,23 +1,21 @@
-initiation
-environement
-Robot
- x_data = out.x.Data;
- y_data = out.y.Data;
+close all; clear all;
+
+% Define the path to your Simulink model
+modelPath = 'projet.slx';
+
+% Load the model into memory (optional, sim will load it if not loaded)
+load_system(modelPath);
+
+% Simulate the model
+out = sim(modelPath, 'SimulationMode', 'normal');
+
+xp_data = out.xp.Data;
+ yp_data = out.yp.Data;
  theta_data = out.theta.Data;
  delta1_data = out.delta1.Data;
  delta2_data = out.delta2.Data;
- rx_data = out.rx.Data;
- ry_data = out.ry.Data;
 
- n = size (x_data);
+ n = size (xp_data);
  for i = 1:n
-     clf;
-     plot(rx_data, ry_data,'LineWidth', 2, 'Color', 'red');
-     hold on;
-     plot(x_data(1:i-1),y_data(1:i-1),'LineWidth', 1, 'Color', 'gre');
-     hold on;
-     xlabel('X');
-     ylabel('Y');
-     title('target points');
-     visual( x_data(i),y_data(i),theta_data(i),delta1_data(i),delta2_data(i));
+     visual( xp_data(i),yp_data(i),theta_data(i),delta1_data(i),delta2_data(i));
  end;
